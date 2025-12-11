@@ -4,6 +4,7 @@ import { Mail,Github, Linkedin} from "lucide-react";
 
 export default function Contact() {
   return (
+    <section id="contact">
     <div className="w-full h-screen flex flex-col justify-center items-center">
       <h2 className="text-4xl font-bold text-center">
         Vamos fazer algo extraordinário?
@@ -22,5 +23,6 @@ export default function Contact() {
         <Linkedin className="h-6 w-6 cursor-pointer" onClick={() => window.open("https://www.linkedin.com/in/manoel-jonathan-silva-lima-825970348/")} />
       </div>
     </div>
+    </section>
   );
 }
