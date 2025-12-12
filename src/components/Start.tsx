@@ -1,29 +1,33 @@
 import { AvatarImage, Avatar } from "./ui/avatar";
-
+import { LampContainer } from "./ui/lamp";
 export default function Start() {
   return (
-    <section id="start">
-      <div className="w-full h-screen flex flex-row justify-center items-center">
-        <div className="flex justify-start items-center-safe ml-[2em] ">
-          <Avatar className="w-[8em] h-[8em] rounded-full shadow-lg">
-            <AvatarImage
-              src="./Foto.jpeg"
-              className="object-cover"
-              alt="Foto de Perfil"
-            />
-          </Avatar>
-        </div>
+    <section id="start" className="w-full min-h-screen flex flex-col items-center justify-center py-10">
+      
+      
+      <Avatar className="w-32 h-32 border-2 border-primary/20 shadow-2xl mb-4 z-10">
+        <AvatarImage
+          src="./Foto.jpeg"
+          className="object-cover"
+          alt="Foto de Perfil"
+        />
+      </Avatar>
 
-        <div className="flex flex-col justify-center items-center gap-4">
-          <p className="text-1xl tracking-[0.2em] font-bold">Portifolio</p>
-          <h1 className="text-5xl font-   bold font-[Open_sans]">
-            Manoel Silva
+      
+      <LampContainer>
+        <div className="flex flex-col items-center gap-2">
+          <p className="text-muted-foreground font-bold tracking-[0.3em] text-sm uppercase">Portifolio</p>
+          <h1 className="text-6xl md:text-8xl font-['Playfair_Display'] text-primary leading-tight">
+            Manoel <span className="italic text-muted-foreground">Silva</span>
           </h1>
-          <span className="text-center">
-            Análise e Desenvolvimento de Software / Full Stack / React / Angular
-            / SQL / Java / Python
-          </span>
         </div>
+      </LampContainer>
+
+      <div className="text-center px-4 -mt-15 md:-mt-20">
+        <span className="text-muted-foreground block max-w-2xl">
+          Analista e Desenvolvedor de Software / Full Stack / React / Angular
+          / SQL / Java / Python
+        </span>
       </div>
     </section>
   );
