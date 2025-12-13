@@ -73,7 +73,7 @@ export function CardAboutFatec() {
         </div>
       </DialogTrigger>
       <DialogContent className="sm:max-w-lg">
-        <DialogHeader>
+        <DialogHeader className="items-center">
           <DialogTitle className="font-bold tracking-[0.3em] uppercase items-center ">
             Cursando
           </DialogTitle>
@@ -82,7 +82,7 @@ export function CardAboutFatec() {
             alt="Imagem da Etec"
             className="w-full h-[7rem] object-cover rounded-md mb-4"
           />
-          <DialogDescription>
+          <DialogDescription className="text-center">
             Tecnólogo em Análise e Desenvolvimento de Sistemas pela Etec de
             Heliópolis.
           </DialogDescription>
