@@ -1,4 +1,4 @@
-import { section } from "motion/react-client";
+
 
 export default function About() {
   return (

@@ -24,6 +24,37 @@ export const StarsBackground = ({
 }) => {
   const [stars, setStars] = useState<any[]>([]);
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const starColorRef = useRef("255, 255, 255");
+
+  useEffect(() => {
+    const updateStarColor = () => {
+      if (document.documentElement.classList.contains("dark")) {
+        starColorRef.current = "255, 255, 255";
+      } else {
+        starColorRef.current = "0, 0, 0";
+      }
+    };
+
+    updateStarColor();
+
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (
+          mutation.type === "attributes" &&
+          mutation.attributeName === "class"
+        ) {
+          updateStarColor();
+        }
+      });
+    });
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
+
+    return () => observer.disconnect();
+  }, []);
 
   const generateStars = useCallback(
     (width: number, height: number) => {
@@ -102,7 +133,7 @@ export const StarsBackground = ({
       stars.forEach((star) => {
         ctx.beginPath();
         ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(255, 255, 255, ${star.opacity})`;
+        ctx.fillStyle = `rgba(${starColorRef.current}, ${star.opacity})`;
         ctx.fill();
 
         if (star.twinkleSpeed !== null) {
