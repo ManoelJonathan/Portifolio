@@ -7,7 +7,7 @@ export default function Start() {
   return (
     <section
       id="start"
-      className="w-full min-h-screen flex flex-col items-center justify-center relative"
+      className="w-full min-h-screen flex flex-col items-center justify-center relative overflow-hidden"
     >
       <Avatar className="w-32 h-32 border-2 border-primary/20 shadow-2xl mb-4 z-10">
         <AvatarImage
