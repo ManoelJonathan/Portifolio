@@ -1,7 +1,8 @@
-import { AvatarImage, Avatar } from "./ui/avatar";
-import { Button } from "./ui/button";
-import { LampContainer } from "./ui/lamp";
+import { AvatarImage, Avatar } from "./ui/shadcn/avatar";
+import { Button } from "./ui/shadcn/button";
+import { LampContainer } from "./ui/acertenity/lamp";
 import { ArrowDownIcon } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Start() {
   return (
@@ -36,7 +37,7 @@ export default function Start() {
       </div>
 
       <div className="absolute bottom-10">
-        <a href="#about">
+        <Link to="/#about">
           <Button
             variant="outline"
             size="icon"
@@ -44,7 +45,7 @@ export default function Start() {
           >
             <ArrowDownIcon />
           </Button>
-        </a>
+        </Link>
       </div>
     </section>
   );

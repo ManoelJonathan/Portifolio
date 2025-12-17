@@ -1,17 +1,21 @@
 import "./App.css";
 import Header from "./components/Header";
+import ScrollToHashElement from "./components/ScrollToHashElement";
 import { ThemeProvider } from "./components/ThemeProvider";
-import { ShootingStars } from "./components/ui/shooting-stars";
-import { StarsBackground } from "./components/ui/stars-background";
-import { Index } from "./pages/Index";
+import { ShootingStars } from "./components/ui/acertenity/shooting-stars";
+import { StarsBackground } from "./components/ui/acertenity/stars-background";
+import { InitRoutes } from "./routes/IndexRoutes";
+import { ProjectsRoutes } from "./routes/ProjectsRoutes";
 
 function App() {
   return (
     <>
       <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+        <ScrollToHashElement />
         <div className="relative z-10">
           <Header />
-          <Index />
+          <InitRoutes />
+          <ProjectsRoutes />
         </div>
         <StarsBackground className="fixed inset-0 z-0 pointer-events-none" />
         <ShootingStars className="fixed inset-0 z-0 pointer-events-none" />

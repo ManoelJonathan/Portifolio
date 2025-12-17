@@ -1,11 +1,11 @@
-import { Button } from "./ui/button";
+import { Button } from "./ui/shadcn/button";
 import { Mail,Github, Linkedin} from "lucide-react";
 
 
 export default function Contact() {
   return (
-    <section id="contact">
-    <div className="w-full h-screen flex flex-col justify-center items-center">
+    <section id="contact" className="w-full h-screen flex flex-col justify-center items-center">
+    
       <h2 className="text-4xl font-bold text-center">
         Vamos fazer algo extraordinário?
       </h2>
@@ -22,7 +22,7 @@ export default function Contact() {
         <Github className="h-6 w-6 cursor-pointer" onClick={() => window.open("https://github.com/manoeljonathan")} />
         <Linkedin className="h-6 w-6 cursor-pointer" onClick={() => window.open("https://www.linkedin.com/in/manoel-jonathan-silva-lima-825970348/")} />
       </div>
-    </div>
+    
     </section>
   );
 }

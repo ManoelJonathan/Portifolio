@@ -1,6 +1,6 @@
 import { ArrowDownIcon } from "lucide-react";
 import { CardAboutEtec, CardAboutFatec } from "./CardAbout";
-import { Button } from "./ui/button";
+import { Button } from "./ui/shadcn/button";
 
 export default function About() {
   return (
@@ -8,7 +8,7 @@ export default function About() {
       id="about"
       className="w-full h-screen flex flex-col gap-4 justify-center"
     >
-      <div className="flex flex-col justify-center items-center gap-2">
+      <div className="flex flex-col justify-center items-center gap-2 mt-10">
         <h2 className="text-4xl text-center font-bold">Minha Jornada</h2>
         <div className="h-1 w-24 bg-linear-to-r from-transparent via-primary to-transparent rounded-full"></div>
         <span className="text-muted-foreground block max-w-2xl text-center">
