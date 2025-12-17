@@ -29,8 +29,8 @@ export default function Projets() {
 
         <div
           className={cn(
-            "flex  md:gap-20 items-center justify-center mt-10",
-            isDesktop ? "flex-row" : "flex-col "
+            "flex gap-20 items-center justify-center mt-10",
+            isDesktop ? "flex-row flex-wrap" : "flex-col"
           )}
         >
           <ContainerScroll
@@ -46,7 +46,7 @@ export default function Projets() {
             }
           >
             <img
-              src="./Foto.jpeg"
+              src="./teste.png"
               alt="hero"
               height={720}
               width={1400}
@@ -55,28 +55,7 @@ export default function Projets() {
               onClick={handleWeunite}
             />
           </ContainerScroll>
-
-          <ContainerScroll
-            titleComponent={
-              <>
-                <h3 className="text-2xl font-semibold text-primary  md:-mt-22 md:mb-12">
-                  WeUnite <br />
-                  <span className="text-lg mt-1 leading-none">
-                    Rede Social para atletas
-                  </span>
-                </h3>
-              </>
-            }
-          >
-            <img
-              src="./Foto.jpeg"
-              alt="hero"
-              height={720}
-              width={1400}
-              className="mx-auto rounded-2xl h-full object-cover"
-              draggable={false}
-            />
-          </ContainerScroll>
+ 
         </div>
         <footer className="flex justify-center -mt-60">
           <a href="#contact">
