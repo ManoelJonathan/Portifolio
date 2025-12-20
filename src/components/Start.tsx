@@ -3,6 +3,7 @@ import { Button } from "./ui/shadcn/button";
 import { LampContainer } from "./ui/acertenity/lamp";
 import { ArrowDownIcon } from "lucide-react";
 import { Link } from "react-router-dom";
+import Foto from "../assets/Foto.jpeg";
 
 export default function Start() {
   return (
@@ -12,7 +13,7 @@ export default function Start() {
     >
       <Avatar className="w-32 h-32 border-2 border-primary/20 shadow-2xl mb-4 z-10">
         <AvatarImage
-          src="./Foto.jpeg"
+          src={Foto}
           className="object-cover"
           alt="Foto de Perfil"
         />

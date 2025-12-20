@@ -4,6 +4,7 @@ import { cn } from "../../lib/utils";
 import { Button } from "../ui/shadcn/button";
 import { ArrowDownIcon } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import Teste from "../../assets/teste.png";
 
 export default function Projets() {
   const { isDesktop } = useBreakpoints();
@@ -29,8 +30,8 @@ export default function Projets() {
 
         <div
           className={cn(
-            "flex gap-20 items-center justify-center mt-10",
-            isDesktop ? "flex-row flex-wrap" : "flex-col"
+            "flex md:gap-20 items-center justify-center mt-10",
+            isDesktop ? "flex-row" : "flex-col "
           )}
         >
           <ContainerScroll
@@ -46,7 +47,7 @@ export default function Projets() {
             }
           >
             <img
-              src="./teste.png"
+              src={Teste}
               alt="hero"
               height={720}
               width={1400}
@@ -55,6 +56,7 @@ export default function Projets() {
               onClick={handleWeunite}
             />
           </ContainerScroll>
+
  
         </div>
         <footer className="flex justify-center -mt-60">

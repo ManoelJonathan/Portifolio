@@ -8,6 +8,8 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/shadcn/dialog";
+import Etec_Image from "../assets/Etec_Image.jpg";
+import Fatec_Image from "../assets/Fatec.jpg";
 
 export function CardAboutEtec() {
   return (
@@ -24,7 +26,7 @@ export function CardAboutEtec() {
             2022 - 2024
           </DialogTitle>
           <img
-            src="/Etec_Image.jpg"
+            src={Etec_Image}
             alt="Imagem da Etec"
             className="w-full h-[7em] md:h-[10em] object-cover rounded-md mb-4"
           />
@@ -78,7 +80,7 @@ export function CardAboutFatec() {
             Cursando
           </DialogTitle>
           <img
-            src="/Fatec.jpg"
+            src={Fatec_Image}
             alt="Imagem da Etec"
             className="w-full h-[7rem] object-cover rounded-md mb-4"
           />

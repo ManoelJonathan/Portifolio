@@ -2,6 +2,7 @@ import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "../ui/shadcn/button";
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
+import Horizontal from "../../assets/Horizontal.png";
 
 export default function WeuniteProjets() {
   return (
@@ -35,7 +36,7 @@ export default function WeuniteProjets() {
           </CardItem>
           <CardItem translateZ="100" className="w-full mt-4">
             <img
-              src="./Horizontal.png"
+              src={Horizontal}
               height="1000"
               width="1000"
               className="h-auto w-auto object-cover rounded-xl group-hover/card:shadow-xl"
