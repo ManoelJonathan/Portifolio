@@ -4,6 +4,7 @@ import { Button } from "../ui/shadcn/button";
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 import LapTopWeUnite from "../../assets/LapTopWeUnite.png";
 import FundoWeunite from "../../assets/FundoWeunite.png";
+import { Github } from "lucide-react";
 
 export default function WeuniteProjets() {
   return (
@@ -26,7 +27,6 @@ export default function WeuniteProjets() {
           <h2 className="text-4xl font-bold mb-1">Inovação</h2>
           <h2 className="text-4xl font-bold mb-1">Evolução</h2>
           <h2 className="text-4xl font-bold mb-1">Oportunidade</h2>
-
           <span className="text-base pt-10 border-b pb-4 border-muted-foreground/50">
             Venha conhecer a WeUnite, a rede social que busca conectar atletas e
             organizações esportivas de forma inovadora. Durante meu tecnólogo no
@@ -36,7 +36,6 @@ export default function WeuniteProjets() {
             esporte, além clubes e organizações encontrarem atletas promissores
             de maneira rápida e eficiente.
           </span>
-
           <div className="flex flex-row gap-10">
             <div className="items-center flex-col flex mt-6">
               <h3 className="text-2xl font-bold">120+</h3>
@@ -50,6 +49,31 @@ export default function WeuniteProjets() {
               <h3 className="text-2xl font-bold">6</h3>
               <span className="text-sm text-muted-foreground">Membros</span>
             </div>
+          </div>
+          <div className="flex flex-row pt-5 gap-4">
+            <Button
+              variant="ghost"
+              className="border-primary border rounded-3xl text-primary bg-background"
+              onClick={() =>
+                window.open(
+                  "https://github.com/ManoelJonathan/weunite-frontend"
+                )
+              }
+            >
+              <Github className="h-4 w-4 mr-2" />
+              Frontend
+            </Button>
+
+            <Button
+              variant="ghost"
+              className="border-primary border rounded-3xl text-primary bg-background"
+              onClick={() =>
+                window.open("https://github.com/ManoelJonathan/weunite-backend")
+              }
+            >
+              <Github className="h-4 w-4 mr-2" />
+              Backend
+            </Button>
           </div>
         </div>
 
