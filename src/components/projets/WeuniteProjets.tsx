@@ -2,11 +2,12 @@ import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "../ui/shadcn/button";
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
-import Horizontal from "../../assets/Horizontal.png";
+import LapTopWeUnite from "../../assets/LapTopWeUnite.png";
+import FundoWeunite from "../../assets/FundoWeunite.png";
 
 export default function WeuniteProjets() {
   return (
-    <div className="min-h-screen pt-[12vh] px-4 flex flex-col items-center text-primary">
+    <div className="min-h-screen pt-[12vh] flex flex-col items-center text-primary gap-2">
       <div className="w-full justify-start items-start">
         <Link to="/">
           <Button variant="outline" className="gap-2">
@@ -16,53 +17,58 @@ export default function WeuniteProjets() {
         </Link>
       </div>
 
-    <div>
-        <h2>Projeto WeUnite</h2>
-    </div>
-      <CardContainer className="inter-var">
-        <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[45rem] h-auto rounded-xl p-6 border  ">
-          <CardItem
-            translateZ="50"
-            className="text-xl font-bold text-neutral-600 dark:text-white"
-          >
-            Make things float in air
-          </CardItem>
-          <CardItem
-            as="p"
-            translateZ="60"
-            className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
-          >
-            Hover over this card to unleash the power of CSS perspective
-          </CardItem>
-          <CardItem translateZ="100" className="w-full mt-4">
-            <img
-              src={Horizontal}
-              height="1000"
-              width="1000"
-              className="h-auto w-auto object-cover rounded-xl group-hover/card:shadow-xl"
-              alt="thumbnail"
-            />
-          </CardItem>
-          <div className="flex justify-between items-center mt-10">
-            <CardItem
-              translateZ={20}
-              as="a"
-              href="https://twitter.com/mannupaaji"
-              target="__blank"
-              className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
-            >
-              Try now →
-            </CardItem>
-            <CardItem
-              translateZ={20}
-              as="button"
-              className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
-            >
-              Sign up
-            </CardItem>
+      <div className="w-full h-[90vh] flex justify-center items-center relative overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
+          style={{ backgroundImage: `url(${FundoWeunite})` }}
+        />
+        <div className="flex flex-col w-full lg:w-[50%] h-full justify-center items-start top-0 left-0 z-0 p-6 ml-10">
+          <h2 className="text-4xl font-bold mb-1">Inovação</h2>
+          <h2 className="text-4xl font-bold mb-1">Evolução</h2>
+          <h2 className="text-4xl font-bold mb-1">Oportunidade</h2>
+
+          <span className="text-base pt-10 border-b pb-4 border-muted-foreground/50">
+            Venha conhecer a WeUnite, a rede social que busca conectar atletas e
+            organizações esportivas de forma inovadora. Durante meu tecnólogo no
+            primeiro ano desenvolvi este projeto como trabalho de conclusão do
+            PI (Projeto Integrador). A plataforma visa facilitar a comunicação,
+            colaborando para o crescimento de novos talentos no mundo do
+            esporte, além clubes e organizações encontrarem atletas promissores
+            de maneira rápida e eficiente.
+          </span>
+
+          <div className="flex flex-row gap-10">
+            <div className="items-center flex-col flex mt-6">
+              <h3 className="text-2xl font-bold">120+</h3>
+              <span className="text-sm text-muted-foreground">Componentes</span>
+            </div>
+            <div className="items-center flex-col flex mt-6">
+              <h3 className="text-2xl font-bold">25</h3>
+              <span className="text-sm text-muted-foreground">Interações</span>
+            </div>
+            <div className="items-center flex-col flex mt-6">
+              <h3 className="text-2xl font-bold">6</h3>
+              <span className="text-sm text-muted-foreground">Membros</span>
+            </div>
           </div>
-        </CardBody>
-      </CardContainer>
+        </div>
+
+        <div className="flex justify-center w-full p-5">
+          <CardContainer className="inter-var relative z-10">
+            <CardBody className="relative group/card w-auto sm:w-[35rem] h-auto rounded-xl p-1   ">
+              <CardItem translateZ="80" className="w-full mt-4">
+                <img
+                  src={LapTopWeUnite}
+                  height="1000"
+                  width="1000"
+                  className="h-auto w-auto object-cover rounded-xl group-hover/card:shadow-xl"
+                  alt="thumbnail"
+                />
+              </CardItem>
+            </CardBody>
+          </CardContainer>
+        </div>
+      </div>
     </div>
   );
 }
