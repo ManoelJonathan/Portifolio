@@ -11,7 +11,7 @@ import {
   DialogTrigger,
   DialogTitle,
 } from "../ui/shadcn/dialog";
-import { DetailsWeunite } from "./DetailsWeunite";
+import { ProjectDetails } from "./DetailsWeunite";
 
 export default function WeuniteProjets() {
   return (
@@ -102,7 +102,7 @@ export default function WeuniteProjets() {
                     <DialogTitle className="absolute top-2 left-2 md:top-4 md:left-4 text-white text-lg md:text-2xl font-bold z-50">
                       Galeria do Projeto WeUnite
                     </DialogTitle>
-                    <DetailsWeunite />
+                    <ProjectDetails projectId="weunite" />
                   </DialogContent>
                 </Dialog>
               </CardItem>

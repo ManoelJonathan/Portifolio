@@ -7,10 +7,19 @@ import {
 } from "../ui/carousel";
 import { TooltipsWeunite } from "./TooltipsWeunite";
 import { useMediaQuery } from "@/lib/useMediaQuery";
-import { galleryData } from "../../data/WeuniteGalleryData";
+import { AllGalleries } from "../../data/AllProjectsGalleryData";
 
-export function DetailsWeunite() {
+interface ProjectDetailsProps {
+  projectId: string;
+}
+
+export function ProjectDetails({ projectId }: ProjectDetailsProps) {
   const isDesktop = useMediaQuery("(min-width: 768px)");
+  const galleryData = AllGalleries[projectId] || [];
+
+  if (!galleryData.length) {
+    return <div className="text-white">Projeto não encontrado ou sem imagens.</div>;
+  }
 
   return (
     <Carousel
@@ -35,7 +44,7 @@ export function DetailsWeunite() {
         className={`h-10 w-10 md:h-14 md:w-14 border-2 border-white/20 bg-black/60 hover:bg-black/80 text-white hover:text-primary hover:border-primary transition-all z-50 ${
           isDesktop
             ? "left-4 top-1/2 -translate-y-1/2"
-            : "top-30 left-1/2 -translate-x-1/2 rotate-90"
+            : "top-24 left-1/2 -translate-x-1/2 rotate-90"
         }`}
       />
       <CarouselNext

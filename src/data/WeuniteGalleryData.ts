@@ -37,7 +37,7 @@ export const galleryData: GalleryItem[] = [
   },
   {
     id: 2,
-    src: Chat, // Placeholder: Adicione outras imagens aqui
+    src: Chat,
     alt: "Detalhes do Perfil",
     tooltips: [
       {

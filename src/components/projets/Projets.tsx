@@ -4,16 +4,12 @@ import { cn } from "../../lib/utils";
 import { Button } from "../ui/shadcn/button";
 import { ArrowDownIcon } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import Teste from "../../assets/teste.png";
+import { ProjectsList } from "../../data/SocialNetworkData";
 
 export default function Projets() {
   const { isDesktop } = useBreakpoints();
-
   const navigate = useNavigate();
 
-  const handleWeunite = () => {
-    navigate("/weunite");
-  };
   return (
     <section
       id="projects"
@@ -34,30 +30,31 @@ export default function Projets() {
             isDesktop ? "flex-row" : "flex-col "
           )}
         >
-          <ContainerScroll
-            titleComponent={
-              <>
-                <h3 className="text-2xl font-semibold text-primary md:-mt-22 md:mb-12">
-                  WeUnite <br />
-                  <span className="text-lg mt-1 leading-none">
-                    Rede Social para atletas
-                  </span>
-                </h3>
-              </>
-            }
-          >
-            <img
-              src={Teste}
-              alt="hero"
-              height={720}
-              width={1400}
-              className="mx-auto rounded-2xl h-full object-cover"
-              draggable={false}
-              onClick={handleWeunite}
-            />
-          </ContainerScroll>
-
- 
+          {ProjectsList.map((project) => (
+            <ContainerScroll
+              key={project.id}
+              titleComponent={
+                <>
+                  <h3 className="text-2xl font-semibold text-primary md:-mt-22 md:mb-12">
+                    {project.title} <br />
+                    <span className="text-lg mt-1 leading-none">
+                      {project.subtitle}
+                    </span>
+                  </h3>
+                </>
+              }
+            >
+              <img
+                src={project.image}
+                alt={project.title}
+                height={720}
+                width={1400}
+                className="mx-auto rounded-2xl h-full object-cover cursor-pointer"
+                draggable={false}
+                onClick={() => navigate(project.route)}
+              />
+            </ContainerScroll>
+          ))}
         </div>
         <footer className="flex justify-center -mt-60">
           <a href="#contact">
