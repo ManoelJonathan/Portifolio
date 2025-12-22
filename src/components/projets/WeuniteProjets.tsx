@@ -5,6 +5,13 @@ import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 import LapTopWeUnite from "../../assets/LapTopWeUnite.png";
 import FundoWeunite from "../../assets/FundoWeunite.png";
 import { Github } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogTrigger,
+  DialogTitle,
+} from "../ui/shadcn/dialog";
+import { DetailsWeunite } from "./DetailsWeunite";
 
 export default function WeuniteProjets() {
   return (
@@ -81,13 +88,23 @@ export default function WeuniteProjets() {
           <CardContainer className="inter-var relative z-10">
             <CardBody className="relative group/card w-auto sm:w-[35rem] h-auto rounded-xl p-1   ">
               <CardItem translateZ="80" className="w-full mt-4">
-                <img
-                  src={LapTopWeUnite}
-                  height="1000"
-                  width="1000"
-                  className="h-auto w-auto object-cover rounded-xl group-hover/card:shadow-xl"
-                  alt="thumbnail"
-                />
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <img
+                      src={LapTopWeUnite}
+                      height="1000"
+                      width="1000"
+                      className="h-auto w-auto object-cover rounded-xl group-hover/card:shadow-xl cursor-pointer hover:opacity-90 transition-opacity"
+                      alt="thumbnail"
+                    />
+                  </DialogTrigger>
+                  <DialogContent className="w-screen h-screen max-w-none sm:max-w-none m-0 p-0 rounded-none border-none bg-black/90 flex flex-col justify-center items-center z-[100]">
+                    <DialogTitle className="absolute top-2 left-2 md:top-4 md:left-4 text-white text-lg md:text-2xl font-bold z-50">
+                      Galeria do Projeto WeUnite
+                    </DialogTitle>
+                    <DetailsWeunite />
+                  </DialogContent>
+                </Dialog>
               </CardItem>
             </CardBody>
           </CardContainer>
