@@ -2,6 +2,7 @@ import { useMediaQuery } from "./useMediaQuery";
 
 export function useBreakpoints() {
   const isMobile = useMediaQuery("(max-width: 480px)");
+  const isSmall = useMediaQuery("(max-width: 768px)");
   const isTablet = useMediaQuery("(min-width: 481px) and (max-width: 768px)");
   const isSmallDesktop = useMediaQuery(
     "(min-width: 769px) and (max-width: 1289px)",
@@ -15,6 +16,7 @@ export function useBreakpoints() {
 
   return {
     isMobile,
+    isSmall,
     isTablet,
     isSmallDesktop,
     isDesktop,

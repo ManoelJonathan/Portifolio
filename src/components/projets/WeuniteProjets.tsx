@@ -2,8 +2,8 @@ import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "../ui/shadcn/button";
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
-import LapTopWeUnite from "../../assets/LapTopWeUnite.png";
-import FundoWeunite from "../../assets/FundoWeunite.png";
+import LapTopWeUnite from "../../assets/WeUniteProject/LapTopWeUnite.png";
+import FundoWeunite from "../../assets/WeUniteProject/FundoWeunite.png";
 import { Github } from "lucide-react";
 import {
   Dialog,
@@ -12,8 +12,13 @@ import {
   DialogTitle,
 } from "../ui/shadcn/dialog";
 import { ProjectDetails } from "./DetailsWeunite";
+import { useBreakpoints } from "../../lib/useBreakpoints";
+import { ProjectsList } from "../../data/SocialNetworkData";
 
 export default function WeuniteProjets() {
+  const { isSmall } = useBreakpoints();
+  const project = ProjectsList.find((p) => p.id === "weunite");
+
   return (
     <div className="min-h-screen pt-[12vh] flex flex-col items-center text-primary gap-2">
       <div className="w-full justify-start items-start">
@@ -35,13 +40,7 @@ export default function WeuniteProjets() {
           <h2 className="text-4xl font-bold mb-1">Evolução</h2>
           <h2 className="text-4xl font-bold mb-1">Oportunidade</h2>
           <span className="text-base pt-10 border-b pb-4 border-muted-foreground/50">
-            Venha conhecer a WeUnite, a rede social que busca conectar atletas e
-            organizações esportivas de forma inovadora. Durante meu tecnólogo no
-            primeiro ano desenvolvi este projeto como trabalho de conclusão do
-            PI (Projeto Integrador). A plataforma visa facilitar a comunicação,
-            colaborando para o crescimento de novos talentos no mundo do
-            esporte, além clubes e organizações encontrarem atletas promissores
-            de maneira rápida e eficiente.
+            {project?.resume}
           </span>
           <div className="flex flex-row gap-10">
             <div className="items-center flex-col flex mt-6">
@@ -81,34 +80,54 @@ export default function WeuniteProjets() {
               <Github className="h-4 w-4 mr-2" />
               Backend
             </Button>
+            {isSmall && (
+              <Dialog>
+                <DialogTrigger asChild>
+                  <Button
+                    variant="ghost"
+                    className="border-primary border rounded-3xl text-primary bg-background"
+                  >
+                    Ver Galeria
+                  </Button>
+                </DialogTrigger>
+                <DialogContent className="w-screen h-screen max-w-none sm:max-w-none m-0 p-0 rounded-none border-none bg-black/90 flex flex-col justify-center items-center z-[100]">
+                  <DialogTitle className="absolute top-2 left-2 md:top-4 md:left-4 text-white text-lg md:text-2xl font-bold z-50">
+                    Galeria do Projeto WeUnite
+                  </DialogTitle>
+                  <ProjectDetails projectId="weunite" />
+                </DialogContent>
+              </Dialog>
+            )}
           </div>
         </div>
 
-        <div className="flex justify-center w-full p-5">
-          <CardContainer className="inter-var relative z-10">
-            <CardBody className="relative group/card w-auto sm:w-[35rem] h-auto rounded-xl p-1   ">
-              <CardItem translateZ="80" className="w-full mt-4">
-                <Dialog>
-                  <DialogTrigger asChild>
-                    <img
-                      src={LapTopWeUnite}
-                      height="1000"
-                      width="1000"
-                      className="h-auto w-auto object-cover rounded-xl group-hover/card:shadow-xl cursor-pointer hover:opacity-90 transition-opacity"
-                      alt="thumbnail"
-                    />
-                  </DialogTrigger>
-                  <DialogContent className="w-screen h-screen max-w-none sm:max-w-none m-0 p-0 rounded-none border-none bg-black/90 flex flex-col justify-center items-center z-[100]">
-                    <DialogTitle className="absolute top-2 left-2 md:top-4 md:left-4 text-white text-lg md:text-2xl font-bold z-50">
-                      Galeria do Projeto WeUnite
-                    </DialogTitle>
-                    <ProjectDetails projectId="weunite" />
-                  </DialogContent>
-                </Dialog>
-              </CardItem>
-            </CardBody>
-          </CardContainer>
-        </div>
+        {!isSmall && (
+          <div className="flex justify-center w-full p-5">
+            <CardContainer className="inter-var relative z-10">
+              <CardBody className="relative group/card w-auto sm:w-[35rem] h-auto rounded-xl p-1   ">
+                <CardItem translateZ="80" className="w-full mt-4">
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <img
+                        src={LapTopWeUnite}
+                        height="1000"
+                        width="1000"
+                        className="h-auto w-auto object-cover rounded-xl group-hover/card:shadow-xl cursor-pointer hover:opacity-90 transition-opacity"
+                        alt="thumbnail"
+                      />
+                    </DialogTrigger>
+                    <DialogContent className="w-screen h-screen max-w-none sm:max-w-none m-0 p-0 rounded-none border-none bg-black/90 flex flex-col justify-center items-center z-[100]">
+                      <DialogTitle className="absolute top-2 left-2 md:top-4 md:left-4 text-white text-lg md:text-2xl font-bold z-50">
+                        Galeria do Projeto WeUnite
+                      </DialogTitle>
+                      <ProjectDetails projectId="weunite" />
+                    </DialogContent>
+                  </Dialog>
+                </CardItem>
+              </CardBody>
+            </CardContainer>
+          </div>
+        )}
       </div>
     </div>
   );
