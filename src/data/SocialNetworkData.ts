@@ -1,4 +1,17 @@
 import ProjectWeUnite from "../assets/WeUniteProject/ProjectWeUnite.png";
+import LapTopWeUnite from "../assets/WeUniteProject/LapTopWeUnite.png";
+import FundoWeunite from "../assets/WeUniteProject/FundoWeunite.png";
+
+export interface ProjectStatsData {
+  components: string;
+  interactions: string;
+  members: string;
+}
+
+export interface ProjectLinksData {
+  frontendUrl: string;
+  backendUrl: string;
+}
 
 export interface ProjectSummary {
   id: string;
@@ -7,6 +20,11 @@ export interface ProjectSummary {
   image: string;
   route: string;
   resume: string;
+  keywords: string[];
+  stats: ProjectStatsData;
+  links: ProjectLinksData;
+  backgroundImage: string;
+  mainImage: string;
 }
 
 export const ProjectsList: ProjectSummary[] = [
@@ -19,6 +37,18 @@ export const ProjectsList: ProjectSummary[] = [
     A plataforma visa facilitar a comunicação, colaborando para o crescimento de novos talentos no mundo do esporte,
     além clubes e organizações encontrarem atletas promissores de maneira rápida e eficiente.`,
     image: ProjectWeUnite,
-    route: "/weunite",
+    route: "/project/weunite",
+    keywords: ["Inovação", "Evolução", "Oportunidade"],
+    stats: {
+      components: "120+",
+      interactions: "25",
+      members: "6"
+    },
+    links: {
+      frontendUrl: "https://github.com/ManoelJonathan/weunite-frontend",
+      backendUrl: "https://github.com/ManoelJonathan/weunite-backend"
+    },
+    backgroundImage: FundoWeunite,
+    mainImage: LapTopWeUnite,
   },
 ];

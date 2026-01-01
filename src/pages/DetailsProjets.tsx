@@ -1,4 +1,4 @@
-import WeuniteProjets from "@/components/projets/WeuniteProjets";
+import WeuniteProjets from "@/components/projets/Projects";
 
 function DetailsProjets() {
   return (

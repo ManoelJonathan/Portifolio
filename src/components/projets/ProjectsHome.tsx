@@ -6,7 +6,7 @@ import { ArrowDownIcon } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { ProjectsList } from "../../data/SocialNetworkData";
 
-export default function Projets() {
+export default function ProjectsHome() {
   const { isDesktop } = useBreakpoints();
   const navigate = useNavigate();
 

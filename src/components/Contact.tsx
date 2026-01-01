@@ -1,8 +1,17 @@
 import { Button } from "./ui/shadcn/button";
-import { Mail,Github, Linkedin} from "lucide-react";
+import { Mail,Github, Linkedin, Check} from "lucide-react";
+import { useState } from "react";
 
 
 export default function Contact() {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyEmail = () => {
+    navigator.clipboard.writeText("manoel_jonathan@hotmail.com");
+    setCopied(true);
+    setTimeout(() => setCopied(false), 500);
+  };
+
   return (
     <section id="contact" className="w-full h-screen flex flex-col justify-center items-center">
     
@@ -12,9 +21,9 @@ export default function Contact() {
       <span>Estou sempre aberto a novos desafios e parcerias.</span>
 
       <div className="pt-6">
-        <Button className="rounded-md">
-          <Mail className="mr-2 h-4 w-4" />
-          manoel_jonathan@hotmail.com
+        <Button className="rounded-md" onClick={handleCopyEmail}>
+          {copied ? <Check className="mr-2 h-4 w-4" /> : <Mail className="mr-2 h-4 w-4" />}
+          {copied ? "Email copiado!" : "manoel_jonathan@hotmail.com"}
         </Button>
       </div>
 

@@ -17,20 +17,26 @@ export default function About() {
         </span>
       </div>
 
-      <div className="relative flex flex-col gap-30 py-20 ml-8">
+      <div className="relative flex flex-col gap-30 py-20 ml-25">
         <div className="absolute left-0 top-0 h-full w-[0.2em] bg-linear-to-b from-transparent via-current to-transparent opacity-20"></div>
 
         <div className="relative flex items-start flex-col">
+          <h3 className="absolute -left-20 top-1/2 -translate-y-1/2 text-2xl font-bold font-['Oswald'] tracking-widest opacity-80">
+            2022
+          </h3>
           <CardAboutEtec />
           <span className="ml-6 text-2xl font-bold font-['Oswald'] tracking-widest opacity-80">
-            Técnico em ADS
+            Técnico em DS
           </span>
           <p className="ml-6 text-xs text-muted-foreground ">
-            Formação focada em analise e desenvolvimento de software na Etec
+            Formação focada em desenvolvimento de software na Etec
           </p>
         </div>
 
         <div className="relative flex flex-col items-start ">
+          <h3 className="absolute -left-20 top-1/2 -translate-y-1/2 text-2xl font-bold font-['Oswald'] tracking-widest opacity-80">
+            2024
+          </h3>
           <CardAboutFatec />
           <span className="ml-6 text-2xl font-bold font-['Oswald'] tracking-widest opacity-80">
             Tecnólogo em ADS
