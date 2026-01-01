@@ -15,7 +15,7 @@ export default function Contact() {
   return (
     <section id="contact" className="w-full h-screen flex flex-col justify-center items-center">
     
-      <h2 className="text-4xl font-bold text-center">
+      <h2 className="text-4xl font-playfair font-bold text-center">
         Vamos fazer algo extraordinário?
       </h2>
       <span>Estou sempre aberto a novos desafios e parcerias.</span>

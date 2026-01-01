@@ -20,7 +20,7 @@ export default function Projects() {
   if (!project) {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center text-primary gap-4">
-        <h2 className="text-2xl font-bold">Projeto não encontrado</h2>
+        <h2 className="text-4xl font-playfair font-bold">Projeto não encontrado</h2>
         <Link to="/">
           <Button variant="outline">Voltar ao Início</Button>
         </Link>
@@ -46,7 +46,7 @@ export default function Projects() {
         />
         <div className="flex flex-col w-full lg:w-[50%] h-full justify-center items-start top-0 left-0 z-0 p-6 ml-10">
           {project.keywords.map((keyword, index) => (
-            <h2 key={index} className="text-4xl font-bold mb-1">
+            <h2 key={index} className="text-4xl font-playfair font-bold mb-1">
               {keyword}
             </h2>
           ))}
@@ -57,15 +57,15 @@ export default function Projects() {
           
           <div className="flex flex-row gap-10">
             <div className="items-center flex-col flex mt-6">
-              <h3 className="text-2xl font-bold">{project.stats.components}</h3>
+              <h3 className="text-2xl font-semibold font-roboto">{project.stats.components}</h3>
               <span className="text-sm text-muted-foreground">Componentes</span>
             </div>
             <div className="items-center flex-col flex mt-6">
-              <h3 className="text-2xl font-bold">{project.stats.interactions}</h3>
+              <h3 className="text-2xl font-semibold font-roboto">{project.stats.interactions}</h3>
               <span className="text-sm text-muted-foreground">Interações</span>
             </div>
             <div className="items-center flex-col flex mt-6">
-              <h3 className="text-2xl font-bold">{project.stats.members}</h3>
+              <h3 className="text-2xl font-semibold font-roboto">{project.stats.members}</h3>
               <span className="text-sm text-muted-foreground">Membros</span>
             </div>
           </div>

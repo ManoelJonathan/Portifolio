@@ -17,7 +17,7 @@ export default function ProjectsHome() {
     >
       <div className="w-full justify-center items-center mt-10">
         <div className="items-center justify-center flex flex-col gap-2">
-          <h2 className="text-4xl text-center font-bold">Projetos</h2>
+          <h2 className="text-4xl text-center font-bold font-playfair">Projetos</h2>
           <div className="h-1 w-24 bg-linear-to-r from-transparent via-primary to-transparent rounded-full"></div>
           <span className="text-muted-foreground block max-w-2xl text-center">
             Alguns dos meus trabalhos mais recentes
@@ -35,7 +35,7 @@ export default function ProjectsHome() {
               key={project.id}
               titleComponent={
                 <>
-                  <h3 className="text-2xl font-semibold text-primary md:-mt-22 md:mb-12">
+                  <h3 className="text-2xl font-semibold font-roboto text-primary md:-mt-22 md:mb-12">
                     {project.title} <br />
                     <span className="text-lg mt-1 leading-none">
                       {project.subtitle}

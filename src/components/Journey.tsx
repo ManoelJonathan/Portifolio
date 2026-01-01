@@ -2,16 +2,16 @@ import { ArrowDownIcon } from "lucide-react";
 import { CardAboutEtec, CardAboutFatec } from "./CardAbout";
 import { Button } from "./ui/shadcn/button";
 
-export default function About() {
+export default function Journey() {
   return (
     <section
       id="about"
       className="w-full h-screen flex flex-col gap-4 justify-center"
     >
       <div className="flex flex-col justify-center items-center gap-2 mt-10">
-        <h2 className="text-4xl text-center font-bold">Minha Jornada</h2>
+        <h2 className="text-4xl text-center font-playfair font-bold">Minha Jornada</h2>
         <div className="h-1 w-24 bg-linear-to-r from-transparent via-primary to-transparent rounded-full"></div>
-        <span className="text-muted-foreground block max-w-2xl text-center">
+        <span className="text-muted-foreground font-space block max-w-2xl text-center">
           Um caminho de aprendizado contínuo, explorando novas tecnologias e
           promovendo inovação.
         </span>
@@ -21,11 +21,11 @@ export default function About() {
         <div className="absolute left-0 top-0 h-full w-[0.2em] bg-linear-to-b from-transparent via-current to-transparent opacity-20"></div>
 
         <div className="relative flex items-start flex-col">
-          <h3 className="absolute -left-20 top-1/2 -translate-y-1/2 text-2xl font-bold font-['Oswald'] tracking-widest opacity-80">
+          <h3 className="absolute -left-20 top-1/2 -translate-y-1/2 text-2xl font-semibold font-roboto tracking-widest opacity-80">
             2022
           </h3>
           <CardAboutEtec />
-          <span className="ml-6 text-2xl font-bold font-['Oswald'] tracking-widest opacity-80">
+          <span className="ml-6 text-2xl font-bold font-roboto tracking-widest opacity-80">
             Técnico em DS
           </span>
           <p className="ml-6 text-xs text-muted-foreground ">
@@ -34,11 +34,11 @@ export default function About() {
         </div>
 
         <div className="relative flex flex-col items-start ">
-          <h3 className="absolute -left-20 top-1/2 -translate-y-1/2 text-2xl font-bold font-['Oswald'] tracking-widest opacity-80">
+          <h3 className="absolute -left-20 top-1/2 -translate-y-1/2 text-2xl font-semibold font-roboto tracking-widest opacity-80">
             2024
           </h3>
           <CardAboutFatec />
-          <span className="ml-6 text-2xl font-bold font-['Oswald'] tracking-widest opacity-80">
+          <span className="ml-6 text-2xl font-bold font-roboto tracking-widest opacity-80">
             Tecnólogo em ADS
           </span>
           <p className="ml-6 text-xs text-muted-foreground ">
