@@ -1,6 +1,7 @@
 import { ArrowDownIcon } from "lucide-react";
-import {CardJourneyEtec, CardJourneyFatec } from "./CardJourney";
+import { JourneyCard } from "./CardJourney";
 import { Button } from "./ui/shadcn/button";
+import { JourneyData } from "@/data/JourneyData";
 
 export default function Journey() {
   return (
@@ -24,7 +25,7 @@ export default function Journey() {
           <h3 className="absolute -left-20 top-1/2 -translate-y-1/2 text-2xl font-semibold font-roboto tracking-widest opacity-80">
             2022
           </h3>
-          <CardJourneyEtec />
+          <JourneyCard data={JourneyData[0]} />
           <span className="ml-6 text-2xl font-bold font-roboto tracking-widest opacity-80">
             Técnico em DS
           </span>
@@ -37,7 +38,7 @@ export default function Journey() {
           <h3 className="absolute -left-20 top-1/2 -translate-y-1/2 text-2xl font-semibold font-roboto tracking-widest opacity-80">
             2024
           </h3>
-          <CardJourneyFatec />
+          <JourneyCard data={JourneyData[1]} />
           <span className="ml-6 text-2xl font-bold font-roboto tracking-widest opacity-80">
             Tecnólogo em ADS
           </span>

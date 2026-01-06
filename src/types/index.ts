@@ -36,3 +36,13 @@ export interface GalleryItem {
   alt: string;
   tooltips: TooltipData[];
 }
+
+export interface Journey{
+    id: string;
+    title: string;
+    description: string;
+    date: string;
+    institution: string;
+    image: string;
+    activity: string[];
+}
