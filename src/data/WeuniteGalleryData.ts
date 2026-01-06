@@ -8,19 +8,7 @@ import Report from "../assets/WeUniteProject/Report.png";
 import DetailsReport from "../assets/WeUniteProject/DetailsReport.png";
 import Chat from "../assets/WeUniteProject/Chat.png";
 
-export interface TooltipData {
-  id: number;
-  top: string;
-  left: string;
-  content: string;
-}
-
-export interface GalleryItem {
-  id: number;
-  src: string;
-  alt: string;
-  tooltips: TooltipData[];
-}
+import type { GalleryItem } from "../types";
 
 export const galleryData: GalleryItem[] = [
   {

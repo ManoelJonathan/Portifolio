@@ -22,6 +22,9 @@ export default function Header() {
 
         <nav className="flex gap-4">
           <Link to="/#about" className="text-sm hover:underline">
+            Sobre
+          </Link>
+          <Link to="/#jornada" className="text-sm hover:underline">
             Jornada
           </Link>
           <Link to="/#projects" className="text-sm hover:underline">

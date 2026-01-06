@@ -10,7 +10,7 @@ import { BadgeCheck, BookOpen, Calendar, GraduationCap } from "lucide-react";
 import Etec_Image from "../assets/Etec_Image.jpg";
 import Fatec_Image from "../assets/Fatec.jpg";
 
-export function CardAboutEtec() {
+export function CardJourneyEtec() {
   return (
     <Dialog>
       <DialogTrigger asChild>
@@ -27,7 +27,7 @@ export function CardAboutEtec() {
           </div>
           
           <div className="relative w-full overflow-hidden rounded-xl shadow-lg group">
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10" />
+            <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent z-10" />
             <img
               src={Etec_Image}
               alt="Imagem da Etec"
@@ -84,7 +84,7 @@ export function CardAboutEtec() {
   );
 }
 
-export function CardAboutFatec() {
+export function CardJourneyFatec() {
   return (
     <Dialog>
       <DialogTrigger asChild>
@@ -101,7 +101,7 @@ export function CardAboutFatec() {
           </div>
           
           <div className="relative w-full overflow-hidden rounded-xl shadow-lg group">
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10" />
+            <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent z-10" />
             <img
               src={Fatec_Image}
               alt="Imagem da Fatec"

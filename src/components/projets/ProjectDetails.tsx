@@ -4,7 +4,7 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "../ui/carousel";
+} from "../ui/shadcn/carousel";
 import {PropoverProjects } from "./PropoverProjects";
 import { useMediaQuery } from "@/lib/useMediaQuery";
 import { AllGalleries } from "../../data/AllProjectsGalleryData";

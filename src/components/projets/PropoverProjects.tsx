@@ -3,8 +3,8 @@ import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "../ui/popover";
-import type { TooltipData } from "../../data/WeuniteGalleryData";
+} from "../ui/shadcn/popover";
+import type { TooltipData } from "../../types";
 
 interface TooltipsWeuniteProps {
   src: string;

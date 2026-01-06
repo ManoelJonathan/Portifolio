@@ -1,31 +1,7 @@
 import ProjectWeUnite from "../assets/WeUniteProject/ProjectWeUnite.png";
 import LapTopWeUnite from "../assets/WeUniteProject/LapTopWeUnite.png";
 import FundoWeunite from "../assets/WeUniteProject/FundoWeunite.png";
-
-export interface ProjectStatsData {
-  components: string;
-  interactions: string;
-  members: string;
-}
-
-export interface ProjectLinksData {
-  frontendUrl: string;
-  backendUrl: string;
-}
-
-export interface ProjectSummary {
-  id: string;
-  title: string;
-  subtitle: string;
-  image: string;
-  route: string;
-  resume: string;
-  keywords: string[];
-  stats: ProjectStatsData;
-  links: ProjectLinksData;
-  backgroundImage: string;
-  mainImage: string;
-}
+import type { ProjectSummary } from "../types";
 
 export const ProjectsList: ProjectSummary[] = [
   {
