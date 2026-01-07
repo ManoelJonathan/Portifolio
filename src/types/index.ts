@@ -16,6 +16,7 @@ export interface ProjectSummary {
   image: string;
   route: string;
   resume: string;
+  badges: string[];
   keywords: string[];
   stats: ProjectStatsData;
   links: ProjectLinksData;

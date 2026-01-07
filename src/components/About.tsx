@@ -1,5 +1,6 @@
 import { ArrowDownIcon } from "lucide-react";
 import { Button } from "./ui/shadcn/button";
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -22,7 +23,7 @@ export default function About() {
       </div>
 
       <footer className="flex justify-center mt-20">
-        <a href="#jornada">
+        <Link to="/#jornada">
           <Button
             variant="outline"
             size="icon"
@@ -30,7 +31,7 @@ export default function About() {
           >
             <ArrowDownIcon />
           </Button>
-        </a>
+        </Link>
       </footer>
     </section>
   );

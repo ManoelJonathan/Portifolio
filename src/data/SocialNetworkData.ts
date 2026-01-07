@@ -14,6 +14,7 @@ export const ProjectsList: ProjectSummary[] = [
     além clubes e organizações encontrarem atletas promissores de maneira rápida e eficiente.`,
     image: ProjectWeUnite,
     route: "/project/weunite",
+    badges: ["React", "Shadcn", "TypeScript", "Java","Spring Boot", "PostgreSQL"],
     keywords: ["Inovação", "Evolução", "Oportunidade"],
     stats: {
       components: "120+",

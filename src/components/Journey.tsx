@@ -2,6 +2,7 @@ import { ArrowDownIcon } from "lucide-react";
 import { JourneyCard } from "./CardJourney";
 import { Button } from "./ui/shadcn/button";
 import { JourneyData } from "@/data/JourneyData";
+import { Link } from "react-router-dom";
 
 export default function Journey() {
   return (
@@ -48,7 +49,7 @@ export default function Journey() {
         </div>
       </div>
       <footer className="flex justify-center">
-        <a href="#projects">
+        <Link to="/#projects">
           <Button
             variant="outline"
             size="icon"
@@ -56,7 +57,7 @@ export default function Journey() {
           >
             <ArrowDownIcon />
           </Button>
-        </a>
+        </Link>
       </footer>
     </section>
   );
