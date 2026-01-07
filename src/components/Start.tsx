@@ -1,5 +1,5 @@
 import { AvatarImage, Avatar } from "./ui/shadcn/avatar";
-import { Button } from "./ui/shadcn/button";
+import { Button } from "./ui/acertenity/button";
 import { LampContainer } from "./ui/acertenity/lamp";
 import { ArrowDownIcon } from "lucide-react";
 import { Link } from "react-router-dom";

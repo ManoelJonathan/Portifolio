@@ -1,4 +1,4 @@
-import { Button } from "./ui/shadcn/button";
+import { Button } from "./ui/acertenity/button";
 import { Mail,Github, Linkedin, Check} from "lucide-react";
 import { useState } from "react";
 

@@ -1,4 +1,4 @@
-import Projects from "@/components/projets/Projects";
+import Projects from "@/components/projects/Projects";
 import { Route, Routes } from "react-router-dom";
 
 export function ProjectsRoutes() {

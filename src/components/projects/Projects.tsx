@@ -1,6 +1,6 @@
 import { ArrowLeft, Github } from "lucide-react";
 import { Link, useParams } from "react-router-dom";
-import { Button } from "../ui/shadcn/button";
+import { Button } from "../ui/acertenity/button";
 import { CardBody, CardContainer, CardItem } from "../ui/acertenity/3d-card";
 import {
   Dialog,

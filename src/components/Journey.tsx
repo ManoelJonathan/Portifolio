@@ -1,6 +1,6 @@
 import { ArrowDownIcon } from "lucide-react";
 import { JourneyCard } from "./CardJourney";
-import { Button } from "./ui/shadcn/button";
+import { Button } from "./ui/acertenity/button";
 import { JourneyData } from "@/data/JourneyData";
 import { Link } from "react-router-dom";
 

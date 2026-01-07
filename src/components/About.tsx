@@ -1,5 +1,5 @@
 import { ArrowDownIcon } from "lucide-react";
-import { Button } from "./ui/shadcn/button";
+import { Button } from "./ui/acertenity/button";
 import { Link } from "react-router-dom";
 
 export default function About() {
@@ -22,7 +22,7 @@ export default function About() {
         </p>
       </div>
 
-      <footer className="flex justify-center mt-20">
+      <footer className="flex justify-center mt-10">
         <Link to="/#jornada">
           <Button
             variant="outline"
