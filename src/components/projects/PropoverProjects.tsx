@@ -35,7 +35,7 @@ export function PropoverProjects({ src, alt, tooltips }: TooltipsWeuniteProps) {
                 <Plus className="h-5 w-5" />
               </button>
             </PopoverTrigger>
-            <PopoverContent className="z-[110] w-auto max-w-[200px] px-3 py-1.5 text-xs rounded-md shadow-xl">
+            <PopoverContent className="z-110 w-auto max-w-[200px] px-3 py-1.5 text-xs rounded-md shadow-xl">
               <p className="font-medium text-xs sm:text-base">{tooltip.content}</p>
             </PopoverContent>
           </Popover>

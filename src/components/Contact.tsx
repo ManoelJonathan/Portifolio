@@ -13,7 +13,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="w-full h-screen flex flex-col justify-center items-center">
+    <section id="contact" className="w-full min-h-screen flex flex-col justify-center items-center">
     
       <h2 className="text-4xl font-playfair font-bold text-center">
         Vamos fazer algo extraordinário?

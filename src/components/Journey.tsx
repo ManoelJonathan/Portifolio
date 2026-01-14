@@ -8,7 +8,7 @@ export default function Journey() {
   return (
     <section
       id="jornada"
-      className="w-full h-screen flex flex-col gap-4 justify-center"
+      className="w-full min-h-screen flex flex-col gap-4 justify-center"
     >
       <div className="flex flex-col justify-center items-center gap-2 mt-10">
         <h2 className="text-4xl text-center font-playfair font-bold">Minha Jornada</h2>

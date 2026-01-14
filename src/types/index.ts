@@ -47,3 +47,13 @@ export interface Journey{
     image: string;
     activity: string[];
 }
+
+export interface technologys{
+    name: string;
+    icon: React.ElementType | string;
+}
+
+export interface skills{
+    field: string;
+    content: technologys[];
+}
