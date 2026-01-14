@@ -26,7 +26,7 @@ export function JourneyCard({ data }: JourneyCardProps) {
         <DialogHeader className="items-center sm:text-center space-y-4">
           <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold tracking-wider uppercase">
             <Calendar className="w-3 h-3" />
-            {data.date}
+            {data.period}
           </div>
           
           <div className="relative w-full overflow-hidden rounded-xl shadow-lg group">

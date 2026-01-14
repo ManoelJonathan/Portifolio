@@ -10,7 +10,8 @@ export const JourneyData: Journey[] = [
               Superior). Durante os três anos adquiri conhecimentos base para
               tecnologia, tanto da programação com lógica e análise com os
               diagramas UML básicos (Caso de Uso, Classes e Atividades).`,
-    date: "2022 - 2024",
+    datefinal: "2024",
+    period: "2022 - 2024",
     institution: "Etec de Heliópolis",
     image: Etec_Image,
     activity: [
@@ -29,7 +30,8 @@ export const JourneyData: Journey[] = [
               conhecimentos em programação, desenvolvimento de software e
               tecnologias emergentes, preparando-me para enfrentar os desafios do
               mercado de trabalho na área de TI.`,
-    date: "Cursando: 2025 - 2026",
+    datefinal: "2026",
+    period: "Cursando:2025 - 2026",
     institution: "Fatec Ipiranga",
     image: Fatec_Image,
     activity: [

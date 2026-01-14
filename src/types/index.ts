@@ -42,7 +42,8 @@ export interface Journey{
     id: string;
     title: string;
     description: string;
-    date: string;
+    datefinal: string;
+    period: string;
     institution: string;
     image: string;
     activity: string[];
