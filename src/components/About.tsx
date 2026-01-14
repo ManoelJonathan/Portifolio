@@ -22,11 +22,10 @@ export default function About() {
 
       <div className="flex flex-col xl:flex-row max-w-7xl text-center xl:text-left px-4 gap-12 items-center">
         <p className="text-lg text-muted-foreground font-space leading-relaxed flex-1 max-w-2xl">
-          Olá! Sou um desenvolvedor apaixonado por criar soluções inovadoras e
-          eficientes. Com foco em desenvolvimento web, busco sempre aprimorar
-          minhas habilidades e entregar projetos que façam a diferença. Minha
-          jornada é marcada pelo aprendizado contínuo e pela busca constante por
-          excelência técnica.
+          Olá! Sou um desenvolvedor foco em desenvolvimento full stack, algumas das linguagens que mais trabalho
+          são JavaScript e o TypeScript, além da utlização da biblioteca React para o frontend. No backend, tenho experiência
+          com Java com Spring Boot, com arquitetura MVC e padrões RESTful. Meus conhecimentos também abragem bancos de dados relacionais
+          como MySQL e PostgresSQL, além disto venho desenvolvendo noções em bancos de dados não relacionais como MongoDB.
         </p>
 
         <div className="w-full flex-1 grid grid-cols-1 md:grid-cols-2 gap-4 ">
