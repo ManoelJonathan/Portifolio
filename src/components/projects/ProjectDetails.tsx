@@ -5,7 +5,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "../ui/shadcn/carousel";
-import {PropoverProjects } from "./PropoverProjects";
+import {PopoverProjects } from "./PopoverProjects";
 import { useMediaQuery } from "@/lib/useMediaQuery";
 import { AllGalleries } from "../../data/AllProjectsGalleryData";
 
@@ -32,7 +32,7 @@ export function ProjectDetails({ projectId }: ProjectDetailsProps) {
             key={image.id}
             className="flex justify-center items-center h-full p-0 pl-0 pt-0"
           >
-            <PropoverProjects
+            <PopoverProjects
               src={image.src}
               alt={image.alt}
               tooltips={image.tooltips}

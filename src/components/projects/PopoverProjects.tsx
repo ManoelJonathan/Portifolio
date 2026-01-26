@@ -6,13 +6,13 @@ import {
 } from "../ui/shadcn/popover";
 import type { TooltipData } from "../../types";
 
-interface TooltipsWeuniteProps {
+interface PopoverProjectsProps {
   src: string;
   alt: string;
   tooltips: TooltipData[];
 }
 
-export function PropoverProjects({ src, alt, tooltips }: TooltipsWeuniteProps) {
+export function PopoverProjects({ src, alt, tooltips }: PopoverProjectsProps) {
   return (
     <div className="w-full h-full flex items-center justify-center px-2 pb-4 pt-16 md:px-10 md:pb-10 md:pt-24">
       <div className="relative inline-block">

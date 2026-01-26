@@ -1,5 +1,5 @@
 import { ProjectCard } from "./ProjectCard";
-import { Button } from "../ui/acertenity/button";
+import { Button } from "../ui/shadcn/button";
 import { ArrowDownIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ProjectsList } from "../../data/SocialNetworkData";

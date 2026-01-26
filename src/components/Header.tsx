@@ -1,6 +1,6 @@
 import { Sun, Moon } from "lucide-react";
 import { useTheme } from "./ThemeProvider";
-import { Button } from "./ui/acertenity/button";
+import { Button } from "./ui/shadcn/button";
 import { Link } from "react-router-dom";
 
 export default function Header() {
