@@ -1,73 +1,76 @@
-# React + TypeScript + Vite
+# 🚀 Meu Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um portfólio moderno, interativo e responsivo desenvolvido para apresentar meus projetos, habilidades e trajetória profissional. Focado em UX/UI com animações fluidas.
 
-Currently, two official plugins are available:
+![Project Preview](public/preview.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tecnologias Utilizadas
 
-## React Compiler
+Este projeto foi construído utilizando as ferramentas mais recentes do ecossistema React:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer-Motion-black?style=for-the-badge&logo=framer&logoColor=blue)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 
-## Expanding the ESLint configuration
+*   **Core:** React 19, TypeScript, Vite
+*   **Estilização:** Tailwind CSS v4
+*   **Componentes UI:** Shadcn/ui, Acertenity UI
+*   **Animações:** Framer Motion
+*   **Roteamento:** React Router Dom v7
+*   **Ícones:** Lucide React, React Icons
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Funcionalidades
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+*   🎨 **Design Moderno:** Tema escuro (Dark Mode) com elementos visuais ricos (efeitos de brilho, cards 3D, partículas).
+*   📱 **Totalmente Responsivo:** Layout adaptável para dispositivos móveis, tablets e desktops.
+*   🖼️ **Galeria de Projetos:** Visualização detalhada de projetos com carrossel de imagens e tooltips interativos.
+*   🚀 **Jornada Profissional:** Linha do tempo interativa mostrando experiência e educação.
+*   ⚡ **Performance:** Otimizado com Vite para carregamento rápido.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 📂 Estrutura do Projeto
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+src/
+├── assets/        # Imagens e recursos estáticos
+├── components/    # Componentes reutilizáveis (Header, Cards, UI blocks)
+│   ├── projects/  # Componentes específicos da seção de projetos
+│   └── ui/        # Biblioteca de componentes (Shadcn/Acertenity)
+├── data/          # Arquivos de dados estáticos (textos, listas)
+├── hooks/         # Custom Hooks
+├── pages/         # Páginas da aplicação
+├── routes/        # Configuração de rotas
+└── lib/           # Utilitários e funções auxiliares
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Como Executar Localmente
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Siga os passos abaixo para rodar o projeto em sua máquina:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/ManoelJonathan/Portifolio.git
+   ```
+
+2. **Entre na pasta do projeto:**
+   ```bash
+   cd Portifolio
+   ```
+
+3. **Instale as dependências:**
+   ```bash
+   npm install
+   # ou
+   pnpm install
+   # ou
+   yarn install
+   ```
+
+4. **Inicie o servidor de desenvolvimento:**
+   ```bash
+   npm run dev
+   ```
+
+
