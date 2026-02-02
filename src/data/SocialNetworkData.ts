@@ -17,8 +17,8 @@ export const ProjectsList: ProjectSummary[] = [
     badges: ["React", "Shadcn", "TypeScript", "Java","Spring Boot", "PostgreSQL"],
     keywords: ["Inovação", "Evolução", "Oportunidade"],
     stats: {
-      components: "120+",
-      interactions: "25",
+      components: "25+",
+      interactions: "25+",
       members: "6"
     },
     links: {
