@@ -14,10 +14,10 @@ export default function About() {
         <h2 className="text-4xl text-center font-playfair font-bold">
           Sobre Mim
         </h2>
+        <div className="h-1 w-24 bg-linear-to-r from-transparent via-primary to-transparent rounded-full"></div>
         <span className="text-muted-foreground font-space block max-w-2xl text-center">
           Conheça um pouco sobre minha trajetória e habilidades
         </span>
-        <div className="h-1 w-24 bg-linear-to-r from-transparent via-primary to-transparent rounded-full"></div>
       </div>
 
       <div className="flex flex-col xl:flex-row max-w-7xl text-center xl:text-left px-4 gap-12 items-center">
