@@ -44,7 +44,7 @@ export default function Projects() {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
           style={{ backgroundImage: `url(${project.backgroundImage})` }}
         />
-        <div className="flex flex-col w-full lg:w-[50%] h-full justify-center items-start top-0 left-0 z-0 p-6 ml-10">
+        <div className="flex flex-col w-full lg:w-[50%] h-full justify-center items-start top-0 left-0 z-0 p-6 ">
           {project.keywords.map((keyword, index) => (
             <h2 key={index} className="text-4xl font-playfair font-bold mb-1">
               {keyword}

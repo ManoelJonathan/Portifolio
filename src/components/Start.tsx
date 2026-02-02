@@ -24,7 +24,7 @@ export default function Start() {
           <p className="text-muted-foreground font-bold tracking-[0.3em] text-sm uppercase">
             Portifolio
           </p>
-          <h1 className="text-6xl md:text-8xl font-['Playfair_Display'] text-primary leading-tight">
+          <h1 className="text-5xl md:text-8xl font-['Playfair_Display'] text-primary leading-tight">
             Manoel <span className="italic text-muted-foreground">Silva</span>
           </h1>
         </div>
