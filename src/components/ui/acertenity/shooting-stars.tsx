@@ -1,6 +1,6 @@
 "use client";
 import { cn } from "@/lib/utils";
-import React, { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef } from "react";
 
 interface ShootingStar {
   id: number;
@@ -40,7 +40,7 @@ export const ShootingStars = ({
 
   useEffect(() => {
     const createStar = () => {
-      const { innerWidth, innerHeight } = window;
+      const { innerWidth } = window;
       const x = Math.random() * innerWidth;
       const y = 0;
       const angle = Math.random() * 90 + 45;
