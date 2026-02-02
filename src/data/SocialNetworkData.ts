@@ -1,6 +1,6 @@
 import ProjectWeUnite from "../assets/WeUniteProject/ProjectWeUnite.png";
 import LapTopWeUnite from "../assets/WeUniteProject/LapTopWeUnite.png";
-import FundoWeunite from "../assets/WeUniteProject/FundoWeunite.png";
+import FundoWeUnite from "../assets/WeUniteProject/FundoWeUnite.png";
 import type { ProjectSummary } from "../types";
 
 export const ProjectsList: ProjectSummary[] = [
@@ -25,7 +25,7 @@ export const ProjectsList: ProjectSummary[] = [
       frontendUrl: "https://github.com/ManoelJonathan/weunite-frontend",
       backendUrl: "https://github.com/ManoelJonathan/weunite-backend"
     },
-    backgroundImage: FundoWeunite,
+    backgroundImage: FundoWeUnite,
     mainImage: LapTopWeUnite,
   },
 ];
