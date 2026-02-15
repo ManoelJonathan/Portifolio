@@ -51,6 +51,8 @@
   --font-redhat: "Red Hat Display", sans-serif;
   --font-roboto: "Roboto Slab", serif;
   --font-playwrite: "Playwrite IE", cursive;
+
+  --breakpoint-3xl: 120rem
 }
 
 

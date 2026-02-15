@@ -11,7 +11,7 @@ export default function ProjectsHome() {
   }));
 
   return (
-    <section id="projects" className="w-full relative py-20 bg-background/50">
+    <section id="projects" className="w-full relative 3xl:py-40 py-20 bg-background/50">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center justify-center gap-2 text-center mb-1">
           <h2 className="text-4xl text-center font-playfair font-bold">

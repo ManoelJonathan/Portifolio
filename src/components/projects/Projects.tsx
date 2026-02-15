@@ -44,7 +44,7 @@ export default function Projects() {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
           style={{ backgroundImage: `url(${project.backgroundImage})` }}
         />
-        <div className="flex flex-col w-full lg:w-[50%] h-full justify-center items-start top-0 left-0 z-0 p-6">
+        <div className="flex flex-col w-full lg:w-[50%] h-full justify-center items-start top-0 left-0 z-0 p-6 lg:ml-10">
           {project.keywords.map((keyword, index) => (
             <h2 key={index} className="text-4xl font-playfair font-bold mb-1">
               {keyword}
@@ -101,7 +101,7 @@ export default function Projects() {
                   </Button>
                 </DialogTrigger>
                 <DialogContent className="w-screen h-screen max-w-none sm:max-w-none m-0 p-0 rounded-none border-none bg-black/90 flex flex-col justify-center items-center z-[100]">
-                  <DialogTitle className="absolute top-2 left-2 md:top-4 md:left-4 text-white text-lg md:text-2xl font-bold z-50">
+                  <DialogTitle className="absolute top-2 left-2 md:top-4 md:left-4 text-primary text-lg md:text-2xl font-bold z-50">
                     Galeria do Projeto {project.title}
                   </DialogTitle>
                   <ProjectDetails projectId={project.id} />
@@ -114,7 +114,7 @@ export default function Projects() {
         {!isSmall && (
           <div className="flex justify-center w-full p-5">
             <CardContainer className="inter-var relative z-10">
-              <CardBody className="relative group/card w-auto sm:w-[35rem] h-auto rounded-xl p-1   ">
+              <CardBody className="relative group/card w-auto sm:w-[35rem] h-auto rounded-xl p-1">
                 <CardItem translateZ="80" className="w-full mt-4">
                   <Dialog>
                     <DialogTrigger asChild>
@@ -127,7 +127,7 @@ export default function Projects() {
                       />
                     </DialogTrigger>
                     <DialogContent className="w-screen h-screen max-w-none sm:max-w-none m-0 p-0 rounded-none border-none bg-background/90 flex flex-col justify-center items-center z-[100]">
-                      <DialogTitle className="absolute top-2 left-2 md:top-4 md:left-4 text-white text-lg md:text-2xl font-bold z-50">
+                      <DialogTitle className="absolute top-2 left-2 md:top-4 md:left-4 text-primary text-lg md:text-2xl font-bold z-50">
                         Galeria do Projeto {project.title}
                       </DialogTitle>
                       <ProjectDetails projectId={project.id} />
